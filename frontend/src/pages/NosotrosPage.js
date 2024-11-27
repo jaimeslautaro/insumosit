@@ -1,43 +1,9 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - Insumos IT</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="stylesheet" href="css/nosotros.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <div class="holder">
-            <img src="img/logo.svg" width="100" alt="InsumosIT">
-            <h1>Insumos IT</h1>
-        </div>
-    </header>
-    <nav>
-        <div class="holder">
-            <ul>
-                <li>
-                    <a href="home.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="productos.html">Productos</a>
-                </li>
-                <li>
-                    <a class="activo" href="nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </div>
-        
-    </nav>
-    <main class="holder">
+import React from 'react';
+import '../styles/components/pages/NosotrosPage.css';
+
+const NosotrosPage = (props) =>{
+    return(
+        <main class="holder">
         <div class="historia">
             <h2>Historia</h2>
             <p>Nuestra organización fue fundada a mediados del 2019, en el auge de la minería informática. Durante ese periodo, en la sociedad existía la necesidad de conocer y explorar el mundo de la minería de criptomonedas.</p>
@@ -47,25 +13,25 @@
             <h2>Nuestro equipo</h2>
             <div class="personas">
                 <div class="persona">
-                    <img src="img/nosotros/Lautaro Jaimes.JPG" alt="Lautaro Jaimes">
+                    <img src="img/nosotros/Lautaro Jaimes.JPG" alt="Lautaro Jaimes"/>
                     <h5>Lautaro Jaimes</h5>
                     <h6>Fundador</h6>
                     <p>Originario de la zona oeste del Gran Buenos Aires, fue quien fundó nuestra compañía con el fin de abastecer la necesidad del mercado encontrada.</p>
                 </div>
                 <div class="persona">
-                    <img src="img/nosotros/Juan Perez.jpeg" alt="Juan Pérez">
+                    <img src="img/nosotros/Juan Perez.jpeg" alt="Juan Pérez"/>
                     <h5>Juan Pérez</h5>
                     <h6>Encargado</h6>
                     <p>Con su basta experiencia en gestión y administración de equipos, nuestro líder y co-fundador se desempeña como encargado.</p>
                 </div>
                 <div class="persona">
-                    <img src="img/nosotros/Carlos Lopez.jpg" alt="Carlos López">
+                    <img src="img/nosotros/Carlos Lopez.jpg" alt="Carlos López"/>
                     <h5>Carlos López</h5>
                     <h6>Técnico Informático</h6>
                     <p>Su continua formación académica y en investigación de mejores productos en el mercado nos permite brindar un servicio de excelente calidad.</p>
                 </div>
                 <div class="persona">
-                    <img src="img/nosotros/Laura Gomez.jpg" alt="Laura Gómez">
+                    <img src="img/nosotros/Laura Gomez.jpg" alt="Laura Gómez"/>
                     <h5>Laura Gómez</h5>
                     <h6>Atención al cliente</h6>
                     <p>Se desempeña en brindar la mejor experiencia en atención y asesoramiento para todos nuestros clientes.</p>
@@ -73,8 +39,7 @@
             </div>
         </div>
     </main>
-    <footer>
-        <p>Diseñado por Lautaro Jaimes - &copy;2024</p>
-    </footer>
-</body>
-</html>
+    );
+}
+
+export default NosotrosPage;

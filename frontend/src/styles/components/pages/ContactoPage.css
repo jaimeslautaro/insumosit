@@ -4,17 +4,20 @@
 }
 
 .contacto section{
+    margin-left: 50px;
     width: 100%;
+    padding-right: 200px;
 }
 
 .datos ul li{
-    font-size: 14px;
+    font-size: 20px;
+    list-style: none;
+    margin: 6px
 }
 
 .formulario p{
     display: flex;
     justify-content: space-between;
-    width: 180px;
     margin-top: 8px;
 }
 
@@ -26,9 +29,14 @@
     align-items: start;
 }
 
+.formulario input{
+    margin: 1px;
+}
+
 .formulario textarea{
     resize: none;
     height: 150px;
+    width: 200px;
     margin-top: 8px;
 }
 
